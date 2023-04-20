@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: '50px',
         color: '#fff',
         textAlign: 'center',
-        fontFamily: 'cursive',
+        fontFamily: 'sans-serif',
         [theme.breakpoints.down('md')]: {
         },
         [theme.breakpoints.down('sm')]: {

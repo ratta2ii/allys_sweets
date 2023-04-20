@@ -13,7 +13,6 @@ function App() {
         <>
             <NavBar />
             <Box className={classes.root}>
-                <Typography id='home' className={classes.title}>Welcome to Ally's Sweets!</Typography>
                 <img src={CandyLogo} className={classes.candyLogo} alt='candy logo' />
                 <AboutMe />
                 <ProductList />

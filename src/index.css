@@ -18,15 +18,9 @@ code {
         monospace;
 }
 
-.subtitle {
-    color: white;
-    font-size: 4em;
-    font-weight: 600;
-    font-family: cursive;
-}
-
 a {
     text-decoration: none;
+    color: black;
 }
 
 /* App drawer */
