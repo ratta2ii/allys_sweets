@@ -13,7 +13,7 @@ const Product = (props) => {
         price } = props;
 
     return (
-        <Grid item alignItems="center" justifyContent="center" xs={12} sm={6}>
+        <Grid item alignItems="center" justifyContent="center" xs={12} md={6}>
             <Card className={classes.card}>
                 <CardActionArea>
                     <CardMedia

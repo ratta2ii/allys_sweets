@@ -16,8 +16,11 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { HashLink as Link } from 'react-router-hash-link';
 import CandyLogo from './../Assets/Images/candyLogo.jpg';
-// import FacebookIcon from '@mui/icons-material/Facebook';
-import FacebookIcon from './../Assets/Images/facebook-icon.webp';
+import HomeIcon from '@mui/icons-material/Home';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
+import CategoryIcon from '@mui/icons-material/Category';
+import FacebookIconImage from './../Assets/Images/facebook-icon.webp';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 const drawerWidth = 240;
 
@@ -49,6 +52,7 @@ function NavBar(props) {
                 <ListItem>
                     <Link to='#home'>
                         <ListItemButton sx={{ textAlign: 'center' }}>
+                            <HomeIcon fontSize='medium' sx={{ marginRight: '10px' }} />
                             <ListItemText primary='Home' />
                         </ListItemButton>
                     </Link>
@@ -56,6 +60,7 @@ function NavBar(props) {
                 <ListItem>
                     <Link to='#products'>
                         <ListItemButton sx={{ textAlign: 'center' }}>
+                            <CategoryIcon sx={{ marginRight: '10px' }} />
                             <ListItemText primary='Products' />
                         </ListItemButton>
                     </Link>
@@ -63,7 +68,16 @@ function NavBar(props) {
                 <ListItem>
                     <Link to='#contact'>
                         <ListItemButton sx={{ textAlign: 'center' }}>
+                            <ContactMailIcon sx={{ marginRight: '10px' }} />
                             <ListItemText primary='Contact' />
+                        </ListItemButton>
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Link to='https://www.facebook.com/AllysFreezeDriedSweet/'>
+                        <ListItemButton sx={{ textAlign: 'center' }}>
+                            <FacebookIcon sx={{ marginRight: '10px' }} />
+                            <ListItemText primary='Facebook' />
                         </ListItemButton>
                     </Link>
                 </ListItem>
@@ -88,12 +102,19 @@ function NavBar(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography
-                        variant="h6"
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
                         <a href="https://www.facebook.com/AllysFreezeDriedSweet/">
-                            <img src={FacebookIcon} alt='facebook icon' style={{marginTop: 9}} />
+                            <img src={FacebookIconImage} alt='facebook icon' style={{marginTop: 9}} />
+                        </a>
+                    </Typography>
+                    <Typography
+                        component="div"
+                        sx={{ flexGrow: 1, display: { xs: 'block', sm: 'none' } }}
+                    >
+                        <a href="https://www.facebook.com/AllysFreezeDriedSweet/">
+                            <img src={FacebookIconImage} alt='facebook icon' style={{float: 'right', marginRight: '-10px'}} />
                         </a>
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>

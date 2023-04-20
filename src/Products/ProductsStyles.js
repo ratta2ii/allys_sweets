@@ -15,6 +15,8 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('md')]: {
         },
         [theme.breakpoints.down('sm')]: {
+            maxWidth: '400px',
+            margin: 'auto',
         },
         [theme.breakpoints.down('xs')]: {
             
@@ -33,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
     candyTitle: {
         marginTop: '10px',
-        fontFamily: 'cursive',
+        fontFamily: 'sans-serif',
         fontWeight: '600',
         [theme.breakpoints.down('md')]: {
         },
