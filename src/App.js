@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Typography } from '@material-ui/core';
+import ContactForm from './ContactUs/ContactForm';
+import ProductList from './Products/ProductList';
+import NavBar from './Navigation/NavBar';
+import AboutMe from './AboutMe/AboutMe';
+import Footer from './Footer/Footer';
+import useStyles from './AppStyles';
+import CandyLogo from './Assets/Images/2_Transparent_Image.png';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const classes = useStyles();
+    return (
+        <>
+            <NavBar />
+            <Box className={classes.root}>
+                <Typography id='home' className={classes.title}>Welcome to Ally's Sweets!</Typography>
+                <img src={CandyLogo} className={classes.candyLogo} alt='candy logo' />
+                <AboutMe />
+                <ProductList />
+                <ContactForm />
+            </Box>
+            <Footer />
+        </>
+    );
 }
 
 export default App;
