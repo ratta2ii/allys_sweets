@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/allys_sweets/static/css/main.67e9eca3.css",
-    "main.js": "/allys_sweets/static/js/main.fb197279.js",
+    "main.css": "/allys_sweets/static/css/main.292ee9d7.css",
+    "main.js": "/allys_sweets/static/js/main.84565b4f.js",
     "static/js/787.a76e12ef.chunk.js": "/allys_sweets/static/js/787.a76e12ef.chunk.js",
     "static/media/IMG_5.webp": "/allys_sweets/static/media/IMG_5.c0c0782fdd23d239fab5.webp",
     "static/media/IMG_1.jpg": "/allys_sweets/static/media/IMG_1.c7250c5e80810f95d1bb.jpg",
@@ -13,12 +13,12 @@
     "static/media/bg-1.avif": "/allys_sweets/static/media/bg-1.9c5abdbcd7d2498f8a4e.avif",
     "index.html": "/allys_sweets/index.html",
     "static/media/facebook-icon.webp": "/allys_sweets/static/media/facebook-icon.8b9598c857f59b150d88.webp",
-    "main.67e9eca3.css.map": "/allys_sweets/static/css/main.67e9eca3.css.map",
-    "main.fb197279.js.map": "/allys_sweets/static/js/main.fb197279.js.map",
+    "main.292ee9d7.css.map": "/allys_sweets/static/css/main.292ee9d7.css.map",
+    "main.84565b4f.js.map": "/allys_sweets/static/js/main.84565b4f.js.map",
     "787.a76e12ef.chunk.js.map": "/allys_sweets/static/js/787.a76e12ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67e9eca3.css",
-    "static/js/main.fb197279.js"
+    "static/css/main.292ee9d7.css",
+    "static/js/main.84565b4f.js"
   ]
 }
