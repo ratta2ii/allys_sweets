@@ -17,15 +17,11 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         fontSize: '4em',
-        fontWeight: '600',
-        fontFamily: 'sans-serif',
+        fontWeight: '400',
+        fontFamily: `'Permanent Marker', cursive`,
         marginBottom: '50px',
         color: 'white',
         textAlign: 'center',
-        [theme.breakpoints.down('md')]: {
-        },
-        [theme.breakpoints.down('sm')]: {
-        },
         [theme.breakpoints.down('xs')]: {
             fontSize: '2em',
             marginBottom: '30px',

@@ -13,14 +13,6 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         clear: 'both',
-        [theme.breakpoints.down('md')]: {
-        },
-        [theme.breakpoints.down('sm')]: {
-        },
-        [theme.breakpoints.down('xs')]: {
-        },
-        ['@media (max-width:475px)']: {
-        },
     },
     footerText: {
         fontFamily: 'monospace',

@@ -1,20 +1,20 @@
 import React from 'react';
-import { Card, CardActionArea, CardContent, CardMedia, Grid, Paper, Typography } from '@material-ui/core';
+import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@material-ui/core';
 import useStyles from './ProductsStyles';
 
 const Product = (props) => {
     const classes = useStyles();
 
-    const { id,
+    const { 
+        id,
         title,
-        subTitle,
         productImage,
         description,
         price } = props;
 
     return (
-        <Grid item alignItems="center" justifyContent="center" xs={12} md={6}>
-            <Card className={classes.card}>
+        <Grid item xs={12} md={6}>
+            <Card key={id} className={classes.card}>
                 <CardActionArea>
                     <CardMedia
                         className={classes.productImage}
@@ -26,9 +26,14 @@ const Product = (props) => {
                     <CardContent>
                         <Typography className={classes.candyTitle} gutterBottom variant="h6">
                             {title}
-                            <span className={classes.candyPrice}>${price}</span>
                         </Typography>
-
+                        <Typography className={classes.candyDescription} gutterBottom variant="h6">
+                            {description}
+                            <br/>
+                            <br/>
+                            <span className={classes.candyPrice}>{price} </span>
+                            <span className={classes.shippingMessage}>(+ at cost Shipping where applicable)</span>
+                        </Typography>
                     </CardContent>
                 </CardActionArea>
             </Card>
