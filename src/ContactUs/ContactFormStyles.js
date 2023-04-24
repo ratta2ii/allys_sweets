@@ -28,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
             margin: '12% auto',
         },
         ['@media (max-width:475px)']: {
-            margin: '5% auto',
+            width: '100%',
+            margin: '0',
         },
     },
     title: {
