@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/allys_sweets/static/css/main.292ee9d7.css",
-    "main.js": "/allys_sweets/static/js/main.84565b4f.js",
+    "main.css": "/allys_sweets/static/css/main.c7e54621.css",
+    "main.js": "/allys_sweets/static/js/main.8ed477c6.js",
     "static/js/787.a76e12ef.chunk.js": "/allys_sweets/static/js/787.a76e12ef.chunk.js",
+    "static/media/candy-bg.jpeg": "/allys_sweets/static/media/candy-bg.cfe91846ee31d9abaae2.jpeg",
     "static/media/IMG_5.webp": "/allys_sweets/static/media/IMG_5.c0c0782fdd23d239fab5.webp",
     "static/media/IMG_1.jpg": "/allys_sweets/static/media/IMG_1.c7250c5e80810f95d1bb.jpg",
     "static/media/IMG_4.jpg": "/allys_sweets/static/media/IMG_4.aeb5a12c1b9aa78957fd.jpg",
@@ -10,15 +11,14 @@
     "static/media/IMG_3.jpg": "/allys_sweets/static/media/IMG_3.1cfb80da94b7a100003b.jpg",
     "static/media/2_Transparent_Image.png": "/allys_sweets/static/media/2_Transparent_Image.f82b1a41c189d2c0dc50.png",
     "static/media/candyLogo.jpg": "/allys_sweets/static/media/candyLogo.518c8eb74e26c8b402f5.jpg",
-    "static/media/bg-1.avif": "/allys_sweets/static/media/bg-1.9c5abdbcd7d2498f8a4e.avif",
     "index.html": "/allys_sweets/index.html",
     "static/media/facebook-icon.webp": "/allys_sweets/static/media/facebook-icon.8b9598c857f59b150d88.webp",
-    "main.292ee9d7.css.map": "/allys_sweets/static/css/main.292ee9d7.css.map",
-    "main.84565b4f.js.map": "/allys_sweets/static/js/main.84565b4f.js.map",
+    "main.c7e54621.css.map": "/allys_sweets/static/css/main.c7e54621.css.map",
+    "main.8ed477c6.js.map": "/allys_sweets/static/js/main.8ed477c6.js.map",
     "787.a76e12ef.chunk.js.map": "/allys_sweets/static/js/787.a76e12ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.292ee9d7.css",
-    "static/js/main.84565b4f.js"
+    "static/css/main.c7e54621.css",
+    "static/js/main.8ed477c6.js"
   ]
 }
