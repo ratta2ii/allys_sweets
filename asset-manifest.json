@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/allys_sweets/static/css/main.c7e54621.css",
-    "main.js": "/allys_sweets/static/js/main.8ed477c6.js",
+    "main.js": "/allys_sweets/static/js/main.04cfa343.js",
     "static/js/787.a76e12ef.chunk.js": "/allys_sweets/static/js/787.a76e12ef.chunk.js",
     "static/media/candy-bg.jpeg": "/allys_sweets/static/media/candy-bg.cfe91846ee31d9abaae2.jpeg",
     "static/media/IMG_5.webp": "/allys_sweets/static/media/IMG_5.c0c0782fdd23d239fab5.webp",
@@ -14,11 +14,11 @@
     "index.html": "/allys_sweets/index.html",
     "static/media/facebook-icon.webp": "/allys_sweets/static/media/facebook-icon.8b9598c857f59b150d88.webp",
     "main.c7e54621.css.map": "/allys_sweets/static/css/main.c7e54621.css.map",
-    "main.8ed477c6.js.map": "/allys_sweets/static/js/main.8ed477c6.js.map",
+    "main.04cfa343.js.map": "/allys_sweets/static/js/main.04cfa343.js.map",
     "787.a76e12ef.chunk.js.map": "/allys_sweets/static/js/787.a76e12ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7e54621.css",
-    "static/js/main.8ed477c6.js"
+    "static/js/main.04cfa343.js"
   ]
 }
