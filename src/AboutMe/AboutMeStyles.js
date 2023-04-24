@@ -4,12 +4,12 @@ const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: '1300px',
         margin: '0 auto',
-        backgroundColor: '#d07da0',
+        backgroundColor: '#ee3b9d61',
         borderRadius: '50px 250px',
         padding: '40px 40px 40px',
         marginBottom: '150px',
         [theme.breakpoints.down('lg')]: {
-            maxWidth: '1100px',            
+            maxWidth: '1100px',
         },
         [theme.breakpoints.down('md')]: {
             padding: '100px',
@@ -46,23 +46,24 @@ const useStyles = makeStyles((theme) => ({
     },
     details: {
         padding: '0 50px',
-        fontFamily: 'sans-serif',
+        fontFamily: 'system-ui, math, sans-serif',
         color: 'white',
         fontWeight: 400,
         textAlign: 'left',
-        fontSize: '1.7em',       
+        fontSize: '1.7em',
         [theme.breakpoints.down('lg')]: {
             padding: '0 75px',
             fontSize: '1.5em',
         },
         [theme.breakpoints.down('md')]: {
-            padding: '0 30px',
+            padding: '0',
             fontSize: '1.3em',
         },
         [theme.breakpoints.down('sm')]: {
             fontSize: '1.5em',
         },
         [theme.breakpoints.down('xs')]: {
+            padding: '0 10px',
             fontSize: '1.2em',
         },
     },

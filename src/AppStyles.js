@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         color: 'white',
         fontSize: '4em',
         fontWeight: '600',
-        fontFamily: 'sans-serif',
+        fontFamily: `'Permanent Marker', cursive`,
         marginTop: 200,
         marginBottom: 100,
         textAlign: 'center',

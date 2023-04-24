@@ -1,4 +1,4 @@
-import { Box, Typography } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import ContactForm from './ContactUs/ContactForm';
 import ProductList from './Products/ProductList';
 import NavBar from './Navigation/NavBar';

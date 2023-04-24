@@ -6,12 +6,13 @@ import { Paper, Typography } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
+import "./styles.css";
 import useStyles from './ContactFormStyles';
 
 const ContactForm = () => {
-    const contactForm = useRef();
+    let contactForm = useRef();
     const classes = useStyles();
-    const [displayForm, setDisplayForm] = useState(true);
+    const [formMessage, setFormMessage] = useState("We offer FREE DELIVERY within a reasonable distance of CDA/Spokane Valley area. All other orders will be charged for shipping at cost. Please contact us here and someone will be with you shortly. Thank you for your patience.");
 
     const handleSubmitForm = (e) => {
         e.preventDefault();
@@ -23,15 +24,12 @@ const ContactForm = () => {
             process.env.REACT_APP_PUBLIC_KEY)
             .then((result) => {
                 if (result.status === 200) {
-                    console.log("RESULT STATUS IS 200");
+                    setFormMessage("Your form has been sent successfully. Thank you!")
                 }
             }, (error) => {
                 console.log(error.text);
+                setFormMessage("There was a problem submitting your form. Please TRY AGAIN!")
             });
-
-        setTimeout(() => {
-            setDisplayForm(false);
-        }, 500)
     };
 
     const validate = (values) => {
@@ -55,22 +53,38 @@ const ContactForm = () => {
         <Box
             id='contact'
             className={classes.root}
-            style={{ display: (displayForm) ? 'box' : 'none' }}
         >
             <Typography className={classes.title} variant='h2'>Contact Us</Typography>
             <Box className={classes.form}>
                 <Form
                     onSubmit={handleSubmitForm}
+                    initialValues={{ employed: true }}
                     validate={validate}
-                    render={({ form, handleSubmit, reset, submitting, pristine, values }) => (
+                    render={({ form, handleSubmit, reset, restart, submitting, pristine, values }) => (
                         <form
+                            id='contact-form'
                             ref={contactForm}
-                            onSubmit={handleSubmitForm}
                             onReset={reset}
+                            onSubmit={async event => {
+                                await handleSubmitForm(event);
+                                form.restart();
+                            }}
                         >
                             <Paper className={classes.paper} >
-                                <Box className={classes.contactInstructions}>
-                                    <h2>Please fill out this form and we will get back with you right away.<br />Thank you!</h2>
+                                <Typography
+                                    className='blink'
+                                    style={{
+                                        textAlign: 'center',
+                                        fontWeight: '600',
+                                        display: (formMessage.length < 150) ? 'none' : 'box',
+                                    }}>
+                                    PLEASE READ BELOW!
+                                </Typography>
+                                <Box
+                                    className={classes.formMessage}
+                                    style={{fontWeight: (formMessage.length < 150) ? '600' : '400'}}
+                                >
+                                    {formMessage}
                                 </Box>
                                 <Grid container alignItems="flex-start" spacing={2}>
                                     <Grid item xs={12} sm={6}>
@@ -144,7 +158,6 @@ const ContactForm = () => {
                                             onClick={() => {
                                                 form.restart();
                                             }}
-                                        // disabled={submitting || pristine}
                                         >
                                             Reset
                                         </Button>
@@ -168,7 +181,6 @@ const ContactForm = () => {
         </Box>
     );
 }
-
 
 export default ContactForm;
 
