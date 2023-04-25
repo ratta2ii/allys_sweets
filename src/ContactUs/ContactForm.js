@@ -14,22 +14,28 @@ const ContactForm = () => {
     const classes = useStyles();
     const [formMessage, setFormMessage] = useState("We offer FREE DELIVERY within a reasonable distance of CDA/Spokane Valley area. All other orders will be charged for shipping at cost. Please contact us here and someone will be with you shortly. Thank you for your patience.");
 
-    const handleSubmitForm = (e) => {
+    const handleSubmitForm = async (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(
+        await emailjs.sendForm(
             process.env.REACT_APP_SERVICE_ID,
             process.env.REACT_APP_TEMPLATE_ID,
             contactForm.current,
             process.env.REACT_APP_PUBLIC_KEY)
             .then((result) => {
                 if (result.status === 200) {
-                    setFormMessage("Your form has been sent successfully. Thank you!")
+                    setTimeout(() => {
+                        setFormMessage("Your form has been sent successfully. Thank you!");
+                    }, 1000);
                 }
             }, (error) => {
                 console.log(error.text);
-                setFormMessage("There was a problem submitting your form. Please TRY AGAIN!")
+                setTimeout(() => {
+                    setFormMessage("There was a problem submitting your form. Please try again later!");
+                }, 1000);
             });
+
+        return;
     };
 
     const validate = (values) => {
@@ -67,7 +73,9 @@ const ContactForm = () => {
                             onReset={reset}
                             onSubmit={async event => {
                                 await handleSubmitForm(event);
-                                form.restart();
+                                setTimeout(() => {
+                                    form.restart();
+                                }, 1000);
                             }}
                         >
                             <Paper className={classes.paper} >
@@ -82,7 +90,7 @@ const ContactForm = () => {
                                 </Typography>
                                 <Box
                                     className={classes.formMessage}
-                                    style={{fontWeight: (formMessage.length < 150) ? '600' : '400'}}
+                                    style={{ fontWeight: (formMessage.length < 150) ? '600' : '400' }}
                                 >
                                     {formMessage}
                                 </Box>

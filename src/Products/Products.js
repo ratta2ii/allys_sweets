@@ -32,7 +32,7 @@ const Product = (props) => {
                             <br/>
                             <br/>
                             <span className={classes.candyPrice}>{price} </span>
-                            <span className={classes.shippingMessage}>(+ at cost Shipping where applicable)</span>
+                            <span className={classes.shippingMessage}>(+ Shipping at cost where applicable)</span>
                         </Typography>
                     </CardContent>
                 </CardActionArea>

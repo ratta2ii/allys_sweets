@@ -1,7 +1,7 @@
 {
   "name": "allys_sweets",
   "version": "0.1.0",
-  "homepage": "https://ratta2ii.github.io/allys_sweets",
+  "homepage": "https://allyssweets.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -24,6 +24,7 @@
     "react-final-form": "^6.5.9",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "recursive-readdir": "^2.2.3",
     "styled-components": "^5.3.9",
     "web-vitals": "^2.1.4"
   },
@@ -33,7 +34,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "deploy": "gh-pages -d build",
+    "deploy:prod":"env-cmd -f .env npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
@@ -52,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
   }
 }
